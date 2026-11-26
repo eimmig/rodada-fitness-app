@@ -1,0 +1,125 @@
+{
+  "title": "Mundo visual do app",
+  "question": "O sorteio escolheu o Placar do Ginásio. Fique com ele, troque por uma alternativa ou sorteie de novo.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Placar do Ginásio",
+      "kicker": "THE ROLL",
+      "lineage": "Placar eletrônico de ginásio poliesportivo de campus: painel preto, dígitos de 7 segmentos em âmbar, nomes em matriz de pontos",
+      "thesis": "Seu dia vira número aceso no placar: o sensor acende os segmentos, não você.",
+      "palette": ["#1E5AA8", "#F4F4F0", "#121212", "#FFB300", "#FF3B2F", "#2A2A26"],
+      "materials": ["painel preto fosco com segmentos apagados visíveis", "LED âmbar de 7 segmentos", "piso de quadra azul com linhas pintadas"],
+      "viewport": "Na aba Hoje, o painel ocupa o topo: DIA 07/30, seus dias contra os do líder em dígitos grandes e uma barra de 10 segmentos que acende ao vivo. Embaixo, sobre o piso da quadra, o ranking do grupo aparece em linhas de matriz de pontos. O FAB 'Ligar monitor' fica no canto da quadra.",
+      "risk": "Se o painel escuro tomar a tela toda, cai no clichê de app fitness preto com neon. O piso claro da quadra precisa segurar o resto da interface.",
+      "raised": [
+        { "from": "rw-manual-acetate-tab-board", "raise": "Nada desliza nem esmaece: toda mudança de número é um passo seco de dois quadros em 90ms, como segmento de LED trocando." },
+        { "from": "notation-diagram-systems-star-atlas", "raise": "A intensidade nunca é gradiente livre: é uma rampa fixa de 10 segmentos acesos, a mesma escala em todo lugar." },
+        { "from": "crouwel-grid-specimen", "raise": "Os numerais são construídos na mesma grade de células do layout; a grade dos segmentos apagados fica visível como parte do desenho." },
+        { "from": "design-annual-s-plate-section", "raise": "Uma única grotesca faz tudo o que não é placar: rótulos, listas, botões. Número de placar só aparece em dado medido." },
+        { "from": "variable-font-specimen", "raise": "A prova é ao vivo: com o monitor ligado, a barra de segmentos responde ao acelerômetro em tempo real." }
+      ]
+    },
+    {
+      "id": "model-pick",
+      "label": "Tabela do Brasileirão",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "Tabela de classificação e grafismo de transmissão de futebol: posição, pontos, jogos, faixas de zona",
+      "thesis": "O grupo é um campeonato: cada dia ativo vale ponto na tabela.",
+      "palette": ["#0B3D2E", "#F2F2EE", "#FFD400", "#1A1A1A", "#D7263D"],
+      "materials": ["linhas de tabela com zonas coloridas", "tarja de placar de transmissão", "escudos gerados a partir das iniciais"],
+      "viewport": "A tabela do grupo ocupa a tela: colunas POS, NOME, DIAS e INTENS., com faixa de zona para o top 3. No alto, uma tarja tipo transmissão mostra seu status de hoje.",
+      "risk": "É familiar: é onde a maioria dos apps de ranking chegaria, e a tabela pode engolir o momento do sensor."
+    },
+    {
+      "id": "challenger-character-goods",
+      "label": "Catálogo de Mascotes",
+      "kicker": "Alternativa",
+      "verdict": "competitive",
+      "lineage": "pop-culture-shelf-character-goods-catalog",
+      "thesis": "Cada membro do grupo é um mascote arredondado num elenco ranqueado; quem não se mexeu hoje fica em cinza.",
+      "palette": ["#FCE7EF", "#E6F4EA", "#FFF4D6", "#FFFFFF", "#FF5A7A", "#2B2B2B"],
+      "materials": ["preenchimento chapado pastel", "contorno branco em cada mascote", "uma fita saturada por pessoa"],
+      "viewport": "Uma grade do elenco do grupo em ordem de dias: cada célula traz o mascote gerado do nome, a fita de cor e uma linha 'hoje: 4.210 passos'. Você aparece destacado com sua fita.",
+      "case": "Ganha em identificação (turma jovem, tom de brincadeira entre colegas), mas perde em clareza: o sensor como prova some atrás dos mascotes.",
+      "risk": "Pede mascote gerado para cada usuário; se for fraco, vira app infantil."
+    },
+    {
+      "id": "challenger-star-atlas",
+      "label": "Atlas Estelar",
+      "verdict": "declined",
+      "lineage": "notation-diagram-systems-star-atlas",
+      "thesis": "Membros como estrelas, o tamanho do ponto dado pela intensidade.",
+      "palette": ["#0E1A33", "#F2F2EA", "#E0482F"],
+      "materials": ["carta celeste", "pontos de magnitude"],
+      "viewport": "O grupo como uma constelação.",
+      "case": "Perde nos dois eixos: a turma não se reconhece num atlas, e o ranking fica ilegível.",
+      "kept": "A rampa fixa de magnitude virou a barra de 10 segmentos.",
+      "risk": "Fica bonito e não diz quem está ganhando."
+    },
+    {
+      "id": "challenger-acetate-manual",
+      "label": "Manual com Abas",
+      "verdict": "declined",
+      "lineage": "rw-manual-acetate-tab-board",
+      "thesis": "Cada aba do app como divisória colorida de manual.",
+      "palette": ["#E5622A", "#F2C200", "#2E6FD8", "#F4F3EE"],
+      "materials": ["acetato leitoso", "divisória de cartão"],
+      "viewport": "Trilho de abas na borda.",
+      "case": "Perde nos dois: nenhuma ligação com atividade física, e é denso demais para uma olhada rápida.",
+      "kept": "O movimento em passo seco de 90ms, sem easing.",
+      "risk": "Lê como documentação."
+    },
+    {
+      "id": "challenger-crouwel",
+      "label": "Grade Crouwel",
+      "verdict": "declined",
+      "lineage": "crouwel-grid-specimen",
+      "thesis": "Números monumentais montados célula por célula.",
+      "palette": ["#FFFFFF", "#1A1A1A", "#2F5BFF"],
+      "materials": ["papel quadriculado", "letra construída"],
+      "viewport": "Um número gigante numa grade.",
+      "case": "Perde nos dois: é o mesmo gesto do placar, só que sem o ginásio, que é o que a turma reconhece.",
+      "kept": "Numeral construído na grade visível.",
+      "risk": "Pôster, não app."
+    },
+    {
+      "id": "challenger-design-annual",
+      "label": "Anuário de Design",
+      "verdict": "declined",
+      "lineage": "design-annual-s-plate-section",
+      "thesis": "Ranking como página de anuário, com marcas de registro.",
+      "palette": ["#F5F4F6", "#16181A", "#DCDDF3"],
+      "materials": ["papel não revestido", "cruzes de registro"],
+      "viewport": "Lâminas com fio fino.",
+      "case": "Perde nos dois: é contido demais para competição entre colegas.",
+      "kept": "Uma única grotesca para todo o resto.",
+      "risk": "Frio."
+    },
+    {
+      "id": "challenger-variable-font",
+      "label": "Espécime Variável",
+      "verdict": "declined",
+      "lineage": "variable-font-specimen",
+      "thesis": "O peso da letra segue o movimento.",
+      "palette": ["#F7F6F2", "#111111", "#FF4F00"],
+      "materials": ["papel", "tinta preta"],
+      "viewport": "Um glifo gigante que engrossa conforme você se mexe.",
+      "case": "Perde nos dois: é truque de tipografia, não ranking.",
+      "kept": "Resposta ao sensor em tempo real.",
+      "risk": "Novidade que cansa."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "code", "toggle": false },
+  "canon": true,
+  "canonCard": {
+    "label": "Padrão da categoria",
+    "thesis": "App fitness Material 3 padrão: anel de progresso, cards e lista de ranking.",
+    "palette": ["#FFFFFF", "#1C1B1F", "#6750A4", "#E8DEF8"],
+    "materials": ["Material You dinâmico", "cards arredondados", "anel de progresso"],
+    "viewport": "Anel de progresso do dia no topo, botão de iniciar, lista de ranking em cards.",
+    "risk": "Indistinguível de qualquer app de exercício."
+  },
+  "steer": true
+}

@@ -1,0 +1,11 @@
+# Android project has its own .gitignore in android/
+/referencias/
+/.impeccable/review/
+/.impeccable/config.local.json
+
+# AI harness: third-party skills and local settings
+/.agents/
+/.claude/
+/skills-lock.json
+/.impeccable/questions/
+/.impeccable/build/

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rodada</string>
+    <string name="channel_monitor">Atividade em andamento</string>
+    <string name="channel_monitor_desc">Aviso fixo enquanto o Rodada mede seu movimento.</string>
+</resources>
